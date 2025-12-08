@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0c0e28;
+  color: white;
+}
+
+section {
+  padding: 60px 80px;
+}
+
+h1, h2, h3 {
+  margin: 0 0 15px 0;
+}
+
+.btn {
+  background: #b5ffcb;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn1{
+  background: #b5ffcb;
+  color: #000;
+  height: 50%;
+  width: 20%;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card {
+  background: #1b1e49;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
