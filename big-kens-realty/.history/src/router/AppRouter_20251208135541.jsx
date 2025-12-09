@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../Pages/Home";
-import About from "../Pages/About";
-import RealEstate from "../Pages/realestate";
+
 
 // Placeholder components for routes that don't exist yet
-// const About = () => <div>About Page</div>;
+const About = () => <div>About Page</div>;
+const RealEstate = () => <div>Real Estate Page</div>;
 const AutoMobile = () => <div>Auto Mobile Page</div>;
 const Music = () => <div>Music Page</div>;
 const Contact = () => <div>Contact Page</div>;
