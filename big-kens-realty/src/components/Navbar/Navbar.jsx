@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import logo from "../../assets/image/logo.png";
+import AuthModal from "../Auth/AuthModal";
 import {
     Bars3Icon,
     HomeIcon,
@@ -15,9 +16,11 @@ import {
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
 
   return (
     <div className="w-full relative">
+      <AuthModal isOpen={isAuthModalOpen} onClose={() => setIsAuthModalOpen(false)} />
 
         <nav className="hidden lg:flex items-center justify-between px-20 py-5 bg-[#0c0e28] fixed top-0 left-0 right-0 z-[100]">
             <span className="inline-flex items-center justify-left gap-2">
@@ -67,6 +70,7 @@ export default function Navbar() {
               whileHover={{ scale: 1.05, backgroundColor: "#9ae6af" }}
               whileTap={{ scale: 0.95 }}
               className="bg-[#b5ffcb] text-black px-6 py-3 rounded-md font-bold transition-colors duration-300"
+              onClick={() => setIsAuthModalOpen(true)}
             >
                 Sign In
             </motion.button>
@@ -159,6 +163,10 @@ export default function Navbar() {
               whileHover={{ scale: 1.02, backgroundColor: "#9ae6af" }}
               whileTap={{ scale: 0.98 }}
               className="bg-[#b5ffcb] text-black px-6 py-3 rounded-md font-bold transition-colors duration-300 w-full mt-2"
+              onClick={() => {
+                setIsAuthModalOpen(true);
+                setIsMobileMenuOpen(false); // Close mobile menu when opening modal
+              }}
             >
                 Sign In
             </motion.button>
