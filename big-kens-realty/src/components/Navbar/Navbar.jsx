@@ -50,10 +50,6 @@ export default function Navbar() {
                 <Link to="/music" className="text-white hover:text-gray-300 transition">
                 Musicals
                 </Link>
-
-                <Link to="/contact" className="text-white hover:text-gray-300 transition">
-                Contact
-                </Link>
             </div>
 
             <button className="bg-[#b5ffcb] text-black px-6 py-3 rounded-md font-bold hover:bg-[#9ae6af] transition">
