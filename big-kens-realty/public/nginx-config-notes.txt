@@ -1,0 +1,5 @@
+For Nginx production servers, add this to your server configuration:
+
+location / {
+  try_files $uri $uri/ /index.html;
+}
