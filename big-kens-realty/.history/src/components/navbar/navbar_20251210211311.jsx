@@ -98,7 +98,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-20 left-0 w-full bg-[#0c0e28] z-[99] transition-all duration-300 ease-in-out lg:hidden ${
+          className={`fixed top-16 left-0 w-full bg-[#0c0e28] z-40 transition-all duration-300 ease-in-out lg:hidden ${
             isMobileMenuOpen
               ? 'opacity-100 translate-y-0 pointer-events-auto'
               : 'opacity-0 -translate-y-10 pointer-events-none'

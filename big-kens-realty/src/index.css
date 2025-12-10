@@ -123,4 +123,20 @@ nav img {
 /* Page transition */
 .page-transition {
   min-height: 100vh;
+  padding-top: 80px; /* Account for fixed navbar height on desktop */
+}
+
+/* Content wrapper for pages with fixed navbar */
+.content-with-navbar {
+  padding-top: 80px; /* Account for fixed navbar height on desktop */
+}
+
+@media (max-width: 1024px) {
+  .page-transition {
+    padding-top: 70px; /* Adjust for mobile navbar height */
+  }
+
+  .content-with-navbar {
+    padding-top: 70px; /* Adjust for mobile navbar height */
+  }
 }

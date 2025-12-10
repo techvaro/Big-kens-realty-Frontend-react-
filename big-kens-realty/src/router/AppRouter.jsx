@@ -6,6 +6,7 @@ import RealEstate from "../Pages/realestate";
 import AutoMobile from "../Pages/Car";
 import Music from "../Pages/music";
 import PageTransition from "../components/animations/PageTransition";
+import Navbar from "../components/Navbar/Navbar";
 
 // Wrapper component for AnimatePresence
 function AnimatedRoutes() {
@@ -62,6 +63,7 @@ function AnimatedRoutes() {
 export default function AppRouter() {
   return (
     <BrowserRouter>
+      <Navbar />
       <AnimatedRoutes />
     </BrowserRouter>
   );

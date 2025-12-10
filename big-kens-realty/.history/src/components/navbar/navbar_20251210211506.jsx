@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <div className="w-full relative">
 
-        <nav className="hidden lg:flex items-center justify-between px-20 py-5 bg-[#0c0e28] fixed top-0 left-0 right-0 z-[100]">
+        <nav className="hidden lg:flex items-center justify-between px-20 py-5 bg-[#0c0e28] sticky top-0 z-50">
             <span className="inline-flex items-center justify-left gap-2">
                 <img src={logo} className="h-[40px] w-[40px] object-contain rounded-full" alt="Big Ken Enterprises Logo" />
                 <span className="text-xl font-bold text-white whitespace-nowrap">Big Ken Enterprises</span>
@@ -72,7 +72,7 @@ export default function Navbar() {
             </motion.button>
         </nav>
 
-        <nav className="flex lg:hidden items-center justify-between px-10 py-5 bg-[#0c0e28] fixed top-0 left-0 right-0 z-[100]">
+        <nav className="flex lg:hidden items-center justify-between px-10 py-5 bg-[#0c0e28] sticky top-0 z-50">
             <span className="flex items-center justify-center gap-5">
                 <img src={logo} className="h-[40px] w-[40px] object-contain rounded-full" alt="Big Ken Enterprises Logo" />
                 <span className="text-1xl font-bold text-white whitespace-normal">Big Ken Enterprises</span>
@@ -98,7 +98,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-20 left-0 w-full bg-[#0c0e28] z-[99] transition-all duration-300 ease-in-out lg:hidden ${
+          className={`fixed top-16 left-0 w-full bg-[#0c0e28] z-40 transition-all duration-300 ease-in-out lg:hidden ${
             isMobileMenuOpen
               ? 'opacity-100 translate-y-0 pointer-events-auto'
               : 'opacity-0 -translate-y-10 pointer-events-none'
@@ -154,6 +154,7 @@ export default function Navbar() {
                 <MusicalNoteIcon className="h-5 w-5 text-white" /> Musicals
               </Link>
             </motion.div>
+
 
             <motion.button
               whileHover={{ scale: 1.02, backgroundColor: "#9ae6af" }}
